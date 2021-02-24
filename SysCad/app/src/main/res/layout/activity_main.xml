@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@drawable/border_01"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CADASTRO DE PESSOA FISICA"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/background_dark"/>
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/imageView2"
+            android:layout_width="136dp"
+            android:layout_height="130dp"
+            app:srcCompat="@drawable/customer" />
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:paddingBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnCadastro"
+                android:layout_marginTop="10dp"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="NOVO CADASTRO"
+                android:background="@drawable/botao_padrao"
+                android:textColor="@android:color/white"/>
+
+            <Button
+                android:id="@+id/btnListagem"
+                android:layout_marginTop="10dp"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="LISTAR CADASTROS"
+                android:background="@drawable/botao_padrao"
+                android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:paddingBottom="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Desenvolvido por Antônio Gonçalves de Abrantes Neto"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Versão: 1.0"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+</LinearLayout>

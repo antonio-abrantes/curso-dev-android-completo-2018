@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityCadastro"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <!--<LinearLayout-->
+        <!--android:background="@drawable/border_01"-->
+        <!--android:padding="10dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--tools:layout_editor_absoluteY="8dp"-->
+        <!--tools:layout_editor_absoluteX="8dp">-->
+
+        <!--<TextView-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="CADASTRO"-->
+            <!--android:textSize="20sp"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textColor="@android:color/background_dark"/>-->
+
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_01"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nome" />
+
+        <EditText
+            android:id="@+id/edtNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:background="@drawable/input_calc"
+            android:padding="5dp"
+            android:hint="Nome" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CPF" />
+
+        <EditText
+            android:id="@+id/edtCpf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@drawable/input_calc"
+            android:padding="5dp"
+            android:inputType="textPersonName"
+            android:hint="CPF" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Idade" />
+
+        <EditText
+            android:id="@+id/edtIdade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@drawable/input_calc"
+            android:padding="5dp"
+            android:inputType="textPersonName"
+            android:hint="Idade" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(XX) 00000000" />
+
+        <EditText
+            android:id="@+id/edtTelefone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@drawable/input_calc"
+            android:padding="5dp"
+            android:inputType="textPersonName"
+            android:hint="Telefone" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="E-mail" />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@drawable/input_calc"
+            android:padding="5dp"
+            android:inputType="textPersonName"
+            android:hint="email@com.br" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="15dp">
+
+            <Button
+                android:id="@+id/btnSalvar"
+                android:layout_margin="10dp"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="SALVAR"
+                android:background="@drawable/botao_padrao"
+                android:textColor="@android:color/white"/>
+
+            <Button
+                android:id="@+id/btnDeletar"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="DELETAR"
+                android:background="@drawable/botao_padrao"
+                android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="5dp">
+
+            <Button
+                android:id="@+id/btnVoltar"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="VOLTAR"
+                android:background="@drawable/botao_padrao"
+                android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

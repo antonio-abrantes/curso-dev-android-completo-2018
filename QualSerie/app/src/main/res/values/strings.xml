@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Qual Serie?</string>
+    <string name="label_pouco">Pouco</string>
+    <string name="label_muito">Muito</string>
+</resources>

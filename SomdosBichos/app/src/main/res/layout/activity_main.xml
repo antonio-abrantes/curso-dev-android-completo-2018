@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.aadeveloper.somdosbichos.MainActivity"
+    android:background="#f5e9b9">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/caoId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="14dp"
+        app:srcCompat="@drawable/cao"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/gatoId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="42dp"
+        app:srcCompat="@drawable/gato"
+        android:layout_alignTop="@+id/caoId"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:id="@+id/leaoId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/leao"
+        android:layout_below="@+id/caoId"
+        android:layout_alignStart="@+id/caoId" />
+
+    <ImageView
+        android:id="@+id/macacoId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/macaco"
+        android:layout_alignTop="@+id/leaoId"
+        android:layout_alignEnd="@+id/gatoId" />
+
+    <ImageView
+        android:id="@+id/ovelhaId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        app:srcCompat="@drawable/ovelha"
+        android:layout_below="@+id/macacoId"
+        android:layout_alignStart="@+id/leaoId" />
+
+    <ImageView
+        android:id="@+id/vacaId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/vaca"
+        android:layout_alignTop="@+id/ovelhaId"
+        android:layout_alignEnd="@+id/macacoId" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/direitos"
+        android:layout_below="@+id/vacaId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+</RelativeLayout>

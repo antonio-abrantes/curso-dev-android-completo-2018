@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="labels_combustivel">20sp</dimen>
+    <dimen name="labels_resultado">30sp</dimen>
+</resources>

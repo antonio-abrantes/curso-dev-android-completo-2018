@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FraseDoDia</string>
+    <string name="frase_do_dia">Frase do dia</string>
+    <string name="escolha_sua_frase">Escolha sua frase!</string>
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.aadeveloper.broadcastreceiver.MainActivity"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/enviar_estatico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:text="@string/enviar_estatico"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/enviar_dinamico" />
+
+    <Button
+        android:id="@+id/enviar_dinamico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:text="@string/enviar_dinamico"
+        android:layout_below="@+id/enviar_estatico"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enviar_dinamico"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:text="@string/service" />
+
+    <TextView
+        android:id="@+id/textViewStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/service"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:text="" />
+
+    <Button
+        android:id="@+id/iniciarbindService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/iniciar_bind_service"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/textViewStatus"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textViewHoras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iniciarbindService"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="" />
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aa.adivinha.MainActivity">
+
+
+    <TextView
+        android:id="@+id/txtSuperior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/texto_grande"
+        android:layout_marginTop="41dp"
+        android:text="@string/escolha_um_numero" />
+
+    <Button
+        android:id="@+id/btnJogar"
+        android:layout_width="@dimen/btn_jogar"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSuperior"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:text="@string/jogar" />
+
+    <TextView
+        android:id="@+id/txtResultato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nenhum numero"
+        android:textSize="@dimen/texto_grande"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

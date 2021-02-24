@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.aa.googlemaps00.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+    <EditText
+        android:id="@+id/edtOrigin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Origem" />
+
+    <EditText
+        android:id="@+id/edtDestination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Destino" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btnFind"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="TRAÇAR ROTA"
+            android:layout_marginRight="20dp"/>
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="CALCULAR CUSTO"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/imgDistance"
+            android:layout_width="53dp"
+            android:layout_height="43dp"
+            app:srcCompat="@drawable/ic_distance" />
+
+        <TextView
+            android:id="@+id/textViewDistance"
+            android:layout_width="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:text="0 km" />
+
+        <ImageView
+            android:layout_marginLeft="25dp"
+            android:id="@+id/imageView2"
+            android:layout_width="33dp"
+            android:layout_height="43dp"
+            app:srcCompat="@drawable/ic_clock" />
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:id="@+id/textViewTimer"
+            android:layout_width="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:text="0 min" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Broadcastreceiver</string>
+    <string name="enviar_estatico">Enviar - Estático</string>
+    <string name="enviar_dinamico">Enviar - Dinamico</string>
+    <string name="service">Service</string>
+    <string name="iniciar_bind_service">Iniciar Bind Service</string>
+</resources>

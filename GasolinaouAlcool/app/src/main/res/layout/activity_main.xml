@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:orientation="vertical"
+    tools:context="com.aa.gasolinaoualcool.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        app:srcCompat="@drawable/logo" />
+
+    <LinearLayout
+        android:id="@+id/linerLabels"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:text="@string/preco_alcool"
+            android:textSize="@dimen/labels_combustivel" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="41dp"
+            android:layout_marginStart="41dp"
+            android:layout_weight="1"
+            android:text="@string/preco_gasolina"
+            android:textSize="@dimen/labels_combustivel" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linerEdits"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edtAlcool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/fundo_edit"
+            android:hint="@string/hint_edit_valor"
+            android:inputType="numberDecimal"
+            android:paddingBottom="3dp"
+            android:paddingTop="10dp" />
+
+        <EditText
+            android:id="@+id/edtGasolina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/fundo_edit"
+            android:hint="@string/hint_edit_valor"
+            android:inputType="numberDecimal"
+            android:paddingBottom="3dp"
+            android:paddingTop="10dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnVerificarMelhorCombustivel"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="22dp"
+        android:text="@string/verificar" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/txtResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="48dp"
+        android:text="@string/resultado"
+        android:textColor="@color/colorResultado"
+        android:textSize="@dimen/labels_resultado" />
+
+</LinearLayout>
